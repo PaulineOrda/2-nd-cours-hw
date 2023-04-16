@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+.top-content {
+    height: 1024px;
+    background-image: url(./img/topback.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+    padding-top: 217px;
+    width: 789px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+.instruction {
+    margin-top: 32px;
+    width: 481px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+
+    &__link {
+    color: #FFFFFF;    
+    font-weight: bold;
+    }
+}
+.button {
+    display: block;
+    margin-top: 44px;
+    width: 234px;
+    height: 49px;
+    background: #9C0332;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        background: #EB443F;    
+    }
+}
+
+.game-box { 
+    background: #000915;
+    height: 556px;
+
+    &__content {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);  
+    } 
+
+    &__item {
+        height: 300px;
+        padding: 32px;
+        box-sizing: border-box;
+        border-radius: 16px;
+        grid-column: span 4;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        &:hover {
+            border: 3px solid #44D2FF;
+        }
+
+        &_1 {   
+            background-image: url(./img/game1.jpg);
+        }
+        
+        &_2 {
+            background-image: url(./img/game2.jpg);
+        }
+        
+        &_3 {
+            background-image: url(./img/game3.jpg);
+        }
+    }  
+}
