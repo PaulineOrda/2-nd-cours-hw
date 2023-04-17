@@ -55,7 +55,7 @@ user.age = 20;
 delete user['city of residence'];
 
 let info = prompt ('Какую информацию хотите узнать о пользователе?');
-alert (user.info);
+alert (user[info]);
 
 // task 10
 let userName = prompt ("Как вас зовут?");
