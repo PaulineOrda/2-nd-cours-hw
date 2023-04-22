@@ -26,7 +26,7 @@ body {
 
 .title {
   padding-top: 217px;
-  width: 789px;
+  width: 700px;
   font-weight: 700;
   font-size: 64px;
   line-height: 78px;
@@ -102,4 +102,49 @@ body {
 }
 .game-box__item_3 {
   background-image: url(./img/game3.jpg);
+}
+
+@media (max-width: 1439px) {
+  .center {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top-content {
+    height: 735px;
+  }
+  .title {
+    padding-top: 239px;
+    width: auto;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .instruction {
+    margin-top: 33px;
+    width: auto;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .button {
+    margin: 33px auto;
+  }
+  .game-box {
+    height: 1221px;
+  }
+  .game-box__content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .game-box__item {
+    padding: 32px 16px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    grid-column: span 4;
+  }
 }/*# sourceMappingURL=style.css.map */
