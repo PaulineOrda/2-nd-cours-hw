@@ -2,7 +2,7 @@
     .center {
         padding-left: 32px;
         padding-right: 32px;
-    } 
+    }
 }
 
 @media (max-width: 767px) {
@@ -10,6 +10,7 @@
         padding-left: 16px;
         padding-right: 16px;
     }
+
     .top-content {
         height: 735px;
     }
@@ -24,6 +25,7 @@
 
     .instruction {
         margin-top: 33px;
+        margin-bottom: 33px;
         width: auto;
         font-size: 14px;
         line-height: 22px;
@@ -31,21 +33,48 @@
     }
 
     .button {
-    margin: 33px auto;
+        margin: 0 auto;
     }
 
-    .game-box { 
+    .game-box {
         height: 1221px;
-    
+
         &__content {
-        grid-template-columns: repeat(4, 1fr);  
-        } 
-    
+            grid-template-columns: repeat(4, 1fr);
+        }
+
         &__item {
-            padding: 32px 16px;
             box-sizing: border-box;
             border-radius: 16px;
             grid-column: span 4;
-        }     
-    } 
+        }
+    }
+
+    .game {
+        height: 654px;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+
+        &__description {
+            grid-column: span 4;
+        }
+
+        &__header {
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+        }
+
+        &__instruction {
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &__image {
+            grid-column: span 4;
+        }
+
+    }
 }

@@ -35,6 +35,7 @@ body {
 
 .instruction {
   margin-top: 32px;
+  margin-bottom: 44px;
   width: 481px;
   font-weight: 300;
   font-size: 18px;
@@ -48,8 +49,7 @@ body {
 
 .button {
   display: block;
-  margin-top: 44px;
-  width: 234px;
+  max-width: 234px;
   height: 49px;
   background: #9C0332;
   border-radius: 30px;
@@ -107,6 +107,42 @@ body {
   background-image: url(./img/game3.jpg);
 }
 
+.game {
+  background: #000915;
+  height: 800px;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+}
+.game__description {
+  grid-column: span 7;
+}
+.game__header {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.game__instruction {
+  max-width: 584px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.game__image {
+  grid-column: span 5;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: stretch;
+}
+.game__image img {
+  grid-column: span 5;
+}
+
 @media (max-width: 1439px) {
   .center {
     padding-left: 32px;
@@ -130,13 +166,14 @@ body {
   }
   .instruction {
     margin-top: 33px;
+    margin-bottom: 33px;
     width: auto;
     font-size: 14px;
     line-height: 22px;
     text-align: center;
   }
   .button {
-    margin: 33px auto;
+    margin: 0 auto;
   }
   .game-box {
     height: 1221px;
@@ -145,9 +182,30 @@ body {
     grid-template-columns: repeat(4, 1fr);
   }
   .game-box__item {
-    padding: 32px 16px;
     box-sizing: border-box;
     border-radius: 16px;
+    grid-column: span 4;
+  }
+  .game {
+    height: 654px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+  .game__description {
+    grid-column: span 4;
+  }
+  .game__header {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .game__instruction {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .game__image {
     grid-column: span 4;
   }
 }/*# sourceMappingURL=style.css.map */
