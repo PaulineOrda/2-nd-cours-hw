@@ -11,7 +11,7 @@ const minValue = (a, b) => {
 console.log(minValue(6, 6));
 
 // task2
-const  evenOrOdd= (a) => {
+const  evenOrOdd = (a) => {
     let result;
     if (a % 2 == 0) {
         result = 'Четное число';
