@@ -12,13 +12,12 @@ console.log(minValue(6, 6));
 
 // task2
 const  evenOrOdd = (a) => {
-    let result;
+    
     if (a % 2 == 0) {
-        result = 'Четное число';
+        return 'Четное число';
     } else {
-        result = 'Нечетное число';
+        return 'Нечетное число';
     }
-    return result;
 }
 
 console.log(evenOrOdd(22));
