@@ -17,7 +17,7 @@
         <h1 class="title">Добро пожаловать на мой сайт!</h1>
         <p class="instruction">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <a href="#"
                 class="instruction__link">поехали</a> и <a href="#" class="instruction__link">приступай</a></p>
-        <a href="./first-game.html" class="button">Поехали!</a>
+        <a href="./games.html" class="button">Поехали!</a>
     </section>
     <section class="game-box center">
         <div class="game-box__content">
@@ -27,14 +27,24 @@
         </div>
     </section>
     <section class="game center">
-        <div class="game__description">
+        <div class="game__description game__description_first">
             <h2 class="game__header">Времена года!</h2>
             <p class="game__instruction">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому
                 времени года он относится</p>
             <a href="#" class="button" onclick="seasons()">Играть!</a>
         </div>
-        <div class="game__image">
+        <div class="game__image game__image_first">
             <img src="./img/game.png" alt="game">
+        </div>
+    </section>
+    <section class="game center">
+        <div class="game__image game__image_second">
+            <img src="./img/game2.png" alt="game">
+        </div>
+        <div class="game__description game__description_second">
+            <h2 class="game__header">Запомни слова</h2>
+            <p class="game__instruction">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+            <a href="#" class="button" onclick="memorizeTheWords()">Играть!</a>
         </div>
     </section>
     <script src="./games.js"></script>

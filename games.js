@@ -46,3 +46,21 @@ const seasons = () => {
         alert('Осень');
     }
 }
+
+const memorizeTheWords = () => {
+    let arrWords = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    arrWords = arrWords.sort(() => Math.random() - 0.5);
+    alert(arrWords);
+    let firstWord = prompt("Какое слово было первым?");
+    let lastWord = prompt("Какое слово было последним?");
+
+    if (firstWord.toLowerCase() == arrWords[0].toLowerCase() && lastWord.toLowerCase() == arrWords[6].toLowerCase()) {
+         alert ("Поздравляем, вы угадали оба слова!");
+    } else {
+        if (firstWord.toLowerCase() == arrWords[0].toLowerCase() || lastWord.toLowerCase() == arrWords[6].toLowerCase()) {
+            alert ("Вы были близки к победе!");
+        } else {
+            alert ("Ваши ответы неверны");
+        }
+    }
+}
