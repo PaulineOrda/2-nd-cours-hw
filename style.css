@@ -116,7 +116,10 @@ body {
   align-items: center;
 }
 .game__description {
-  grid-column: span 7;
+  grid-column: span 6;
+}
+.game__description_second {
+  grid-column: 7/13;
 }
 .game__header {
   font-weight: 700;
@@ -138,6 +141,9 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: stretch;
+}
+.game__image_first {
+  grid-column: 8/13;
 }
 .game__image img {
   grid-column: span 5;
@@ -194,6 +200,9 @@ body {
   .game__description {
     grid-column: span 4;
   }
+  .game__description_second {
+    order: 1;
+  }
   .game__header {
     font-size: 32px;
     line-height: 39px;
@@ -207,5 +216,8 @@ body {
   }
   .game__image {
     grid-column: span 4;
+  }
+  .game__image_second {
+    order: 2;
   }
 }/*# sourceMappingURL=style.css.map */

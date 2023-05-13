@@ -123,7 +123,11 @@ body {
     align-items: center;
 
     &__description {
-        grid-column: span 7;
+        grid-column: span 6;
+
+        &_second {
+            grid-column: 7 / 13;
+        }
     }
 
     &__header {
@@ -148,6 +152,10 @@ body {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         justify-items: stretch;
+
+        &_first {
+            grid-column: 8 / 13;
+        }
     }
 
     &__image img {
